@@ -244,6 +244,45 @@ table {
   margin-bottom: 10px;
 }
 
+.website {
+  background-image: url(img/bg-callout.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.website h2 {
+  font-size: 45px;
+  font-family: "poppins bold";
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.website button {
+  display: block;
+  color: white;
+  background-color: #1D809F;
+  border: 1px solid #1D809F;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "poppins bold";
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -373,6 +412,22 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .services .details p {
     font-size: 16px;
     margin-bottom: 0px;
+  }
+  .website h2 {
+    font-size: 60px;
+    font-family: "poppins semibold";
+    color: #212529;
+    margin-bottom: 50px;
+    width: 50%;
+    line-height: 70px;
+  }
+  .website button {
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .website button:hover {
+    background-color: #1c9bc2;
+    border: 1px solid #1c9bc2;
   }
 }
 
