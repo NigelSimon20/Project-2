@@ -15,7 +15,7 @@ $regular: "poppins regular";
         .slide{right: 50px; opacity: 1; transition: 1s; color: white;}
     }
 
-    .menu{background-color: black; position: absolute; top: 0; width: 100%; left: -100vw; opacity: 0; transition: .4s ease; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 997;  height: 100vh;
+    .menu{background-color: #1D809F; position: absolute; top: 0; width: 100%; left: -100vw; opacity: 0; transition: .4s ease; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 997;  height: 100vh;
         .menu-item{padding: 15px 20px; list-style: none;
             a{color: white; font-family: $regular;}
         }

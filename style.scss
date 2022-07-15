@@ -55,6 +55,8 @@ $semibold: "poppins semibold";
 $bold: "poppins bold";
 $regular: "poppins regular";
 $italic: "poppins italic";
+$light: "poppins light";
+$medium: "poppins medium";
 
 
 
@@ -63,6 +65,26 @@ $italic: "poppins italic";
     h1{font-size: 45px; font-family: $bold; color: white; text-align: center; margin-bottom: 20px;}
     p{font-family: $italic; font-size: 20px; text-align: center; color: white; line-height: 32px; margin-bottom: 20px;}
     button{display: block; color: white; background-color: #1D809F; border: 1px solid #1D809F; padding: 20px; border-radius: 5px; font-family: $bold}
+}
+
+.offer{text-align: center; padding: 70px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    h2{font-size: 30px; font-family: $semibold; color: #212529; text-align: center; margin-bottom: 20px; line-height: 37px;}
+    p{font-family: $light; font-size: 20px; text-align: center; color: #212529; line-height: 32px; margin-bottom: 20px;
+        span{color: #1D809F; cursor: pointer;}
+    }
+    button{display: block; color: white; background-color: #212529; border: 1px solid #212529; padding: 20px; border-radius: 5px; font-family: $bold; text-align: center;}
+}
+
+.services{background-color: #1D809F; text-align: center; padding: 70px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    h3{color: #ecb807; font-family: $semibold; font-size: 25px; margin-bottom: 20px;}
+    h2{font-size: 30px; font-family: $bold; color: white; text-align: center; margin-bottom: 50px;}
+    .details{display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 50px;
+        .icon{background-color: white; width: 50px; height: 50px; border-radius: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;margin-bottom: 20px;
+            img{width: 30px;}
+         }
+         h4{font-size: 20px; font-family: $bold; color: white; text-align: center; margin-bottom: 10px;}
+         p{font-size: 16px; font-family: $regular; color: white; text-align: center; margin-bottom: 10px;}
+    }
 }
 
 
@@ -93,16 +115,48 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
 
+    .services{
+        h3{font-size: 25px; margin-bottom: 20px;}
+        h2{font-size: 30px; margin-bottom: 70px;}
+        .details{margin-bottom: 50px; margin-right: 40px;
+            .icon{margin-bottom: 20px;
+                img{width: 30px;}
+             }
+             h4{font-size: 20px; margin-bottom: 10px;}
+             p{font-size: 16px; margin-bottom: 10px;}
+        }
+        .inner-services{display: flex; flex-direction: row; align-items: center; justify-content: center;}
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
     .banner{
-        h1{font-size: 75px; font-family: $bold; color: #212529; margin-bottom: 20px;}
+        h1{font-size: 72px; font-family: $bold; color: #212529; margin-bottom: 20px;}
         p{font-size: 20px; text-align: center; color: #212529; margin-bottom: 30px;}
         button{font-size: 12px; cursor: pointer;}
         button:hover{background-color: #1c9bc2; border: 1px solid #1c9bc2;}
+    }
+
+    .offer{padding: 100px 0;
+        h2{font-size: 28px;}
+        p{margin-bottom: 40px; font-size: 18px;}
+        button{font-size: 12px; cursor: pointer;}
+        button:hover{background-color: #0c0f13; border: 1px solid #0c0f13;}
+    }
+
+    .services{padding: 100px 0;
+        h3{font-size: 20px; margin-bottom: 20px;}
+        h2{font-size: 40px; margin-bottom: 90px;}
+        .details{margin-bottom: 50px; margin-right: 30px;
+            .icon{margin-bottom: 20px; height: 100px; width: 100px;
+                img{width: 40px;}
+             }
+             h4{font-size: 20px; margin-bottom: 15px;}
+             p{font-size: 16px; margin-bottom: 0px;}
+        }
     }
 
 }

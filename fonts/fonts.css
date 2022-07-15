@@ -23,8 +23,15 @@
     src:url("Poppins-Regular.ttf")
 }
 @font-face{
+    font-family:'poppins light';
+    font-style: normal;
+    font-weight: 700;
+    src:url("Poppins-Light.ttf")
+}
+
+@font-face{
     font-family:'poppins medium';
     font-style: normal;
     font-weight: 700;
-    src:url("Poppins-Medium.otf")
+    src:url("Poppins-Medium.ttf")
 }
