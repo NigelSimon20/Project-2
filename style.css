@@ -248,7 +248,7 @@ table {
   background-image: url(img/bg-callout.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,10 +267,11 @@ table {
 
 .website h2 {
   font-size: 45px;
-  font-family: "poppins bold";
+  font-family: "poppins semibold";
   color: white;
   text-align: center;
   margin-bottom: 20px;
+  line-height: 60px;
 }
 
 .website button {
@@ -281,6 +282,138 @@ table {
   padding: 20px;
   border-radius: 5px;
   font-family: "poppins bold";
+}
+
+.portfolio {
+  padding: 70px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.portfolio h3 {
+  color: #ecb807;
+  font-family: "poppins semibold";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.portfolio h2 {
+  font-size: 30px;
+  font-family: "poppins bold";
+  color: #212529;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio .projects .one {
+  background-image: url(img/portfolio-1.jpg);
+}
+
+.portfolio .projects .two {
+  background-image: url(img/portfolio-2.jpg);
+}
+
+.portfolio .projects .three {
+  background-image: url(img/portfolio-3.jpg);
+}
+
+.portfolio .projects .four {
+  background-image: url(img/portfolio-4.jpg);
+}
+
+.portfolio .projects .project {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+
+.portfolio .projects .project h4 {
+  font-size: 20px;
+  font-family: "poppins bold";
+  color: white;
+  margin-bottom: 10px;
+}
+
+.portfolio .projects .project p {
+  font-size: 16px;
+  font-family: "poppins regular";
+  line-height: 1.4;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  background-color: #1D809F;
+  text-align: center;
+  padding: 70px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons h2 {
+  font-size: 30px;
+  font-family: "poppins bold";
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.4;
+}
+
+.buttons button {
+  display: block;
+  color: white;
+  background-color: #212529;
+  border: 1px solid #212529;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "poppins bold";
+  text-align: center;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.buttons .first {
+  background-color: white;
+  color: #212529;
+  border: 1px solid white;
 }
 
 /*
@@ -339,6 +472,94 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .portfolio h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .portfolio h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .portfolio .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio .projects .project {
+    height: 30vh;
+    padding: 0 20px;
+    width: 40%;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 90px;
+  }
+  .portfolio .projects .project h4 {
+    font-size: 20px;
+    font-family: "poppins bold";
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .portfolio .projects .project p {
+    font-size: 16px;
+    font-family: "poppins regular";
+    line-height: 1.4;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .buttons h2 {
+    width: 100%;
+  }
+  .buttons button {
+    display: block;
+    color: white;
+    background-color: #212529;
+    border: 1px solid #212529;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: "poppins bold";
+    text-align: center;
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  .buttons .first {
+    background-color: white;
+    color: #212529;
+    border: 1px solid white;
+    margin-right: 40px;
   }
 }
 
@@ -413,6 +634,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 16px;
     margin-bottom: 0px;
   }
+  .website {
+    height: 100vh;
+  }
   .website h2 {
     font-size: 60px;
     font-family: "poppins semibold";
@@ -428,6 +652,54 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .website button:hover {
     background-color: #1c9bc2;
     border: 1px solid #1c9bc2;
+  }
+  .portfolio {
+    padding: 100px 60px;
+  }
+  .portfolio h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .portfolio h2 {
+    font-size: 40px;
+    margin-bottom: 90px;
+  }
+  .portfolio .projects .project {
+    height: 35vh;
+    padding: 0 30px;
+    width: 40%;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 100px;
+  }
+  .portfolio .projects .project h4 {
+    font-size: 20px;
+    font-family: "poppins bold";
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .portfolio .projects .project p {
+    font-size: 16px;
+    font-family: "poppins regular";
+    line-height: 1.4;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .buttons {
+    padding: 100px 60px;
+  }
+  .buttons h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .buttons button {
+    cursor: pointer;
+    width: 15%;
+    margin-bottom: 0;
   }
 }
 

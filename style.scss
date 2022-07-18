@@ -87,9 +87,30 @@ $medium: "poppins medium";
     }
 }
 
-.website{background-image: url(img/bg-callout.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;
-    h2{font-size: 45px; font-family: $bold; color: white; text-align: center; margin-bottom: 20px;}
+.website{background-image: url(img/bg-callout.jpg); background-size: cover; background-repeat: no-repeat; height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;
+    h2{font-size: 45px; font-family: $semibold; color: white; text-align: center; margin-bottom: 20px; line-height: 60px;}
     button{display: block; color: white; background-color: #1D809F; border: 1px solid #1D809F; padding: 20px; border-radius: 5px; font-family: $bold}
+}
+
+.portfolio{padding: 70px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    h3{color: #ecb807; font-family: $semibold; font-size: 25px; margin-bottom: 20px;}
+    h2{font-size: 30px; font-family: $bold; color: #212529; text-align: center; margin-bottom: 50px;}
+    .projects{
+        .one{background-image: url(img/portfolio-1.jpg);}
+        .two{background-image: url(img/portfolio-2.jpg);}
+        .three{background-image: url(img/portfolio-3.jpg);}
+        .four{background-image: url(img/portfolio-4.jpg);}
+        .project{background-size: cover; background-repeat: no-repeat; height: 30vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 20px;
+            h4{font-size: 20px; font-family: $bold; color: white; margin-bottom: 10px;}
+            p{font-size: 16px; font-family: $regular; line-height: 1.4; color: white; text-align: center; margin-bottom: 10px;}
+        }
+    }
+}
+
+.buttons{background-color: #1D809F; text-align: center; padding: 70px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    h2{font-size: 30px; font-family: $bold; color: white; text-align: center; margin-bottom: 50px; line-height: 1.4;}
+    button{display: block; color: white; background-color: #212529; border: 1px solid #212529; padding: 20px; border-radius: 5px; font-family: $bold; text-align: center; width: 40%; margin-bottom: 20px;}
+    .first{background-color: white; color: #212529; border: 1px solid white;}
 }
 
 
@@ -133,6 +154,23 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         .inner-services{display: flex; flex-direction: row; align-items: center; justify-content: center;}
     }
 
+    .portfolio{
+        h3{font-size: 25px; margin-bottom: 20px;}
+        h2{font-size: 30px; margin-bottom: 50px;}
+        .projects{display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;
+            .project{height: 30vh; padding: 0 20px; width: 40%; text-align: left; align-items: flex-start; padding-top: 90px;
+                h4{font-size: 20px; font-family: $bold; color: white; text-align: left; margin-bottom: 10px;}
+                p{font-size: 16px; font-family: $regular; line-height: 1.4; color: white; text-align: left; margin-bottom: 10px;}
+            }
+        }
+    }
+
+    .buttons{display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;
+        h2{width: 100%;}
+        button{display: block; color: white; background-color: #212529; border: 1px solid #212529; padding: 20px; border-radius: 5px; font-family: $bold; text-align: center; width: 20%; margin-bottom: 20px;}
+        .first{background-color: white; color: #212529; border: 1px solid white; margin-right: 40px;}
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -164,10 +202,26 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
     }
 
-    .website{
+    .website{height: 100vh;
         h2{font-size: 60px; font-family: $semibold; color: #212529; margin-bottom: 50px; width: 50%; line-height: 70px;}
         button{font-size: 12px; cursor: pointer;}
         button:hover{background-color: #1c9bc2; border: 1px solid #1c9bc2;}
+    }
+
+    .portfolio{padding: 100px 60px;
+        h3{font-size: 20px; margin-bottom: 20px;}
+        h2{font-size: 40px; margin-bottom: 90px;}
+        .projects{
+            .project{height: 35vh; padding: 0 30px; width: 40%; text-align: left; align-items: flex-start; padding-top: 100px;
+                h4{font-size: 20px; font-family: $bold; color: white; text-align: left; margin-bottom: 10px;}
+                p{font-size: 16px; font-family: $regular; line-height: 1.4; color: white; text-align: left; margin-bottom: 10px;}
+            }
+        }
+    }
+
+    .buttons{padding: 100px 60px;
+        h2{font-size: 30px; margin-bottom: 20px;}
+        button{cursor: pointer; width: 15%; margin-bottom: 0;}
     }
 
 }
